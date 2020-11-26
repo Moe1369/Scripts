@@ -4151,7 +4151,7 @@ SetWinXMenuPowerShell
 SetControlPanelCategories
 DisableShortcutInName
 HideShortcutArrow
-SetVisualFXAppearance
+SetVisualFXPerformance
 EnableTitleBarColor
 SetInactiveTitleBarColor 
 SetAppsLightMode
