@@ -1,4 +1,4 @@
-if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+Reif(!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
 	Start-Process PowerShell -Verb RunAs "-NoProfile -ExecutionPolicy Bypass -Command `"cd '$pwd'; & '$PSCommandPath';`"";
 	exit;
 }
@@ -23,6 +23,10 @@ F:\Software\Greenshot-INSTALLER-1.2.10.6-RELEASE.exe /VERYSILENT
 F:\Software\NDP47-KB3186497-x86-x64-AllOS-ENU.exe /q /norestart
 F:\Software\npp.7.6.6.Installer.exe /S 
 F:\Software\vlc-2.2.2-win64.exe /L 1031 /S
+
+# Office Installation
+F:\OfficeTools\setup.exe /configure configuration.xml
+
 
 # Unnötige Microsoft Apps deinstallieren
 AGet-AppxPackage "Microsoft.3DBuilder" | Remove-AppxPackage -AllUsers
@@ -127,6 +131,5 @@ Get-AppxPackage "ThumbmunkeysLtd.PhototasticCollage" | Remove-AppxPackage -AllUs
 Get-AppxPackage "WinZipComputing.WinZipUniversal" | Remove-AppxPackage -AllUsers
 Get-AppxPackage "XINGAG.XING" | Remove-AppxPackage -AllUsers
 
-F:\OfficeTools\setup.exe /configure configuration.xml
 
 Add-Computer -DomainName $(Read-Host "Wie lautet die FQDN der Domäne?")
