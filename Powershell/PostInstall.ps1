@@ -12,7 +12,6 @@ else {
 }
 
 # Silent Install (.msi)
-msiexec.exe /i F:\Software\iisexpress_amd64_de-DE.msi /qn
 msiexec.exe /i F:\Software\GoogleChromeStandaloneEnterprise64.msi /qn
 msiexec.exe /i F:\Software\putty-0.71-installer.msi /qn
 msiexec.exe /i F:\Software\pdf24-creator-8.8.2.msi /qn
@@ -20,16 +19,16 @@ msiexec.exe /i F:\Software\7z1900-x64.msi /qn
 
 # Silent Install (.exe)
 F:\Software\Greenshot-INSTALLER-1.2.10.6-RELEASE.exe /VERYSILENT
-F:\Software\NDP47-KB3186497-x86-x64-AllOS-ENU.exe /q /norestart
 F:\Software\npp.7.6.6.Installer.exe /S 
 F:\Software\vlc-2.2.2-win64.exe /L 1031 /S
+F:\Software\SophosSetup.exe --quiet
 
 # Office Installation
 F:\OfficeTools\setup.exe /configure configuration.xml
 
 
 # Unnötige Microsoft Apps deinstallieren
-AGet-AppxPackage "Microsoft.3DBuilder" | Remove-AppxPackage -AllUsers
+Get-AppxPackage "Microsoft.3DBuilder" | Remove-AppxPackage -AllUsers
 Get-AppxPackage "Microsoft.AppConnector" | Remove-AppxPackage -AllUsers
 Get-AppxPackage "Microsoft.BingFinance" | Remove-AppxPackage -AllUsers
 Get-AppxPackage "Microsoft.BingFoodAndDrink" | Remove-AppxPackage -AllUsers

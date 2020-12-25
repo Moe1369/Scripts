@@ -3220,7 +3220,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.BingTranslator" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingTravel" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingWeather" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.WindowsCalculator" | Remove-AppxPackage
+	#Get-AppxPackage "Microsoft.WindowsCalculator" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ConnectivityStore" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.FreshPaint" | Remove-AppxPackage
@@ -4218,7 +4218,7 @@ DisableOneDrive
 UninstallOneDrive
 UninstallMsftBloat
 UninstallThirdPartyBloat
-UninstallWindowsStore
+InstallWindowsStore
 DisableXboxFeatures
 DisableFullscreenOptims
 DisableAdobeFlash
