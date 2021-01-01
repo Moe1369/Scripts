@@ -4138,8 +4138,8 @@ ShowFileOperationsDetails
 DisableFileDeleteConfirm
 HideTaskbarSearch
 ShowTaskView
-ShowSmallTaskbarIcons
-SetTaskbarCombineNever
+ShowLargeTaskbarIcons
+SetTaskbarCombineAlways
 HideTaskbarPeopleIcon
 HideTrayIcons
 HideSecondsFromTaskbar
