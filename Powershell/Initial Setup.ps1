@@ -4066,7 +4066,7 @@ HideDefenderTrayIcon
 EnableDefender
 EnableDefenderCloud
 DisableCtrldFolderAccess
-EnableCIMemoryIntegrity
+DisableCIMemoryIntegrity
 DisableDefenderAppGuard
 HideAccountProtectionWarn
 EnableDownloadBlocking
@@ -4138,8 +4138,8 @@ ShowFileOperationsDetails
 DisableFileDeleteConfirm
 HideTaskbarSearch
 ShowTaskView
-ShowLargeTaskbarIcons
-SetTaskbarCombineAlways
+ShowSmallTaskbarIcons
+SetTaskbarCombineNever
 HideTaskbarPeopleIcon
 HideTrayIcons
 HideSecondsFromTaskbar
@@ -4155,7 +4155,7 @@ SetVisualFXAppearance
 EnableTitleBarColor
 SetInactiveTitleBarColor 
 SetAppsLightMode
-SetSystemDarkMode
+SetSystemLightMode
 RemoveENKeyboard
 EnableNumlock
 DisableEnhPointerPrecision
