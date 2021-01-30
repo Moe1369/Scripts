@@ -4155,7 +4155,7 @@ SetVisualFXAppearance
 EnableTitleBarColor
 SetInactiveTitleBarColor 
 SetAppsLightMode
-SetSystemLightMode
+SetSystemDarkMode
 RemoveENKeyboard
 EnableNumlock
 DisableEnhPointerPrecision
