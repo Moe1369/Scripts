@@ -4238,7 +4238,7 @@ UninstallPowerShellV2
 InstallPowerShellISE
 UninstallLinuxSubsystem
 UninstallHyperV
-UninstallSSHClient
+InstallSSHClient
 UninstallSSHServer
 UninstallTelnetClient
 UninstallNET23
@@ -4259,4 +4259,3 @@ DisableSignIn
 ### Auxiliary Functions ###
 # WaitForKey
 # Restart
-
